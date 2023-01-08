@@ -1,0 +1,258 @@
+/* -------  General Styles ------- */
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+  font-weight: 400;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+
+  display:flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p {
+  line-height: 1.5em;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+}
+
+section.alternate-background {
+  background-color: #00a699;
+  color: #fff;
+}
+
+main img {
+  width: 100px;
+}
+
+/* ---  Groups & Items --- */
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+/* -------  Navigation ------- */
+
+header {
+  background-color: #ff385c;
+  padding: 20px 20px 0 20px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Pangolin", cursive;
+  font-size: 72px;
+  color: #fff;
+
+  overflow-wrap: break-word;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px 0 0;
+}
+
+header nav ul li a:hover {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+/* -------  menu    ----------- */
+
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+/* -------  Search Form ------- */
+form {
+  border: 2px solid #ff385c;
+  padding: 10px;
+
+  justify-content: space-between;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form select,
+form input {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+form button {
+  background-color: #ff385c;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+  width: 100%;
+}
+
+.navDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
+main img {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------  Footer ------- */
+
+footer {
+  background-color: #ff385c;
+}
+
+footer p {
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+
+
+/* -------  Media Query ------- */
+
+@media all and (min-width: 480px) {
+  header {
+    background-color: #ff385c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 0;
+  }
+  main img {
+    padding: 0;
+  }
+
+  html {
+    display: flex;
+  }
+
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .navComponents {
+    display: flex;
+    flex-direction: row;
+    flex: 4;
+    justify-content: space-between;
+  }
+
+  .buttonDiv {
+    flex: 1;
+    margin-left: 40px;
+    align-self: center;
+  }
+
+  .navDiv {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-self: center;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  .about-contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-contents div {
+    margin: 10px;
+  }
+
+  .about-image {
+    flex: 1;
+  }
+
+  .about-paragraph {
+    flex: 2;
+  }
+
+  section#stay {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo {
+    overflow-wrap: normal;
+    font-size: 40px;
+    padding: 10px;
+  }
+
+  .ideas-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  .idea-section {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .footer-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-text {
+    flex: 1;
+  }
+
+  .image-footer {
+    flex: 1;
+  }
+}
